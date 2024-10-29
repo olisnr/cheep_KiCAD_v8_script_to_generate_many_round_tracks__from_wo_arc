@@ -7,11 +7,12 @@ points_per_circle =     180
 radius_start =          99.3
 radius_delta =          -.6
 arcs =                  52
+circle_div =            4
 
 pcb = GetBoard()
 
 for arc in range(arcs):
-    for track in range(int(points_per_circle / 2)):
+    for track in range(int(points_per_circle / circle_div)):
         a = 2 * math.pi / points_per_circle * track
         b = 2 * math.pi / points_per_circle * (track + 1)
 
