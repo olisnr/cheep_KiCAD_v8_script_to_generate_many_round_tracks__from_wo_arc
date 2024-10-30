@@ -10,3 +10,4 @@ points_per_circle =     180
 radius_start =          99.3
 radius_delta =          -.6
 arcs =                  52
+circle_div =            4
